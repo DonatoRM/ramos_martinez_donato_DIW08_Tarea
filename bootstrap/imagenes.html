@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="application-name" content="Imágenes en Bootstrap">
+    <meta name="description" content="Ejercicio 3 de la UD8 - Contenido web interactivo">
+    <meta name="keywords" content="html,css,javascript,bootstrap">
+    <title>Ejemplo de Bootstrap con Imágenes</title>
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="row mt-5">
+            <div class="col-sm-6 col-lg-4">
+                <!-- La clase img-fluid no existe en Bootstrap. Me imagino que será un error del enunciado de la 
+                tarea. Lo más lógico es que sea la clase .img-thumbnail -->
+                <picture>
+                    <source media="min-width: 576px" srcset="images/foto-sm.jpg">
+                    <source media="min-width: 768px" srcset="images/foto-md.jpg">
+                    <source media="min-width: 992px" srcset="images/foto-lm.jpg">
+                    <source media="min-width: 1200px" srcset="images/foto-xl.jpg">
+                    <source media="min-width: 1440px" srcset="images/foto-xxl.jpg">
+                    <img class="img-thumbnail w-100" src="images/foto-xm.jpg" alt="Imagen aérea de playa y costa">
+                </picture>
+                <div class="titulo text-center fs-1 fw-bold text-white bg-warning mt-2">.img-thumbnail</div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <picture>
+                    <source media="min-width: 576px" srcset="images/foto-sm.jpg">
+                    <source media="min-width: 768px" srcset="images/foto-md.jpg">
+                    <source media="min-width: 992px" srcset="images/foto-lm.jpg">
+                    <source media="min-width: 1200px" srcset="images/foto-xl.jpg">
+                    <source media="min-width: 1440px" srcset="images/foto-xxl.jpg">
+                    <img class="rounded w-100" src="images/foto-xm.jpg" alt="Imagen aérea de playa y costa">
+                </picture>
+                <div class="titulo text-center fs-1 fw-bold text-white bg-warning mt-2 w-100">rounded</div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <picture>
+                    <source media="min-width: 576px" srcset="images/foto-sm.jpg">
+                    <source media="min-width: 768px" srcset="images/foto-md.jpg">
+                    <source media="min-width: 992px" srcset="images/foto-lm.jpg">
+                    <source media="min-width: 1200px" srcset="images/foto-xl.jpg">
+                    <source media="min-width: 1440px" srcset="images/foto-xxl.jpg">
+                    <img class="rounded-circle w-100" src="images/foto-xm.jpg" alt="Imagen aérea de playa y costa">
+                </picture>
+                <div class="titulo text-center fs-1 fw-bold text-white bg-warning mt-2 w-100">rounded-circle</div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
